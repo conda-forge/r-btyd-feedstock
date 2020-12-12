@@ -1,4 +1,4 @@
-{% set version = '2.4.1' %}
+{% set version = "2.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BTYD_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BTYD/BTYD_{{ version }}.tar.gz
-  sha256: 4be02c52b76f71556a3611cebca2378c9e8aec8f1f03a42c5931eb9facfcadae
+  sha256: 70bbe7e6073f97944e978ae7c845b11afc48f4ad2ca6b2b4865ff63d80c18c79
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -44,13 +44,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=BTYD
   license: GPL-3.0-only
-  summary: Functions for data preparation, parameter estimation, scoring, and plotting for the
-    BG/BB (Fader, Hardie, and Shang 2010 <doi:10.1287/mksc.1100.0580>), BG/NBD (Fader,
-    Hardie, and Lee 2005 <doi:10.1287/mksc.1040.0098>) and Pareto/NBD and Gamma/Gamma
-    (Fader, Hardie, and Lee 2005 <doi:10.1509/jmkr.2005.42.4.415>) models.
+  summary: Functions for data preparation, parameter estimation, scoring, and plotting for the BG/BB (Fader, Hardie, and Shang 2010 <doi:10.1287/mksc.1100.0580>), BG/NBD (Fader, Hardie, and Lee 2005 <doi:10.1287/mksc.1040.0098>) and Pareto/NBD and Gamma/Gamma (Fader, Hardie, and Lee 2005 <doi:10.1509/jmkr.2005.42.4.415>)
+    models.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
