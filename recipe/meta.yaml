@@ -1,4 +1,4 @@
-{% set version = "2.4.2" %}
+{% set version = "2.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BTYD_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BTYD/BTYD_{{ version }}.tar.gz
-  sha256: 70bbe7e6073f97944e978ae7c845b11afc48f4ad2ca6b2b4865ff63d80c18c79
+  sha256: ffa84a4b5902c4c1aea44304cb405b95caadc2e9741ebdb6182fdea72abbf3eb
 
 build:
   merge_build_host: true  # [win]
