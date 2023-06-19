@@ -1,11 +1,11 @@
-About r-btyd
-============
+About r-btyd-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-btyd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=BTYD
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-btyd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions for data preparation, parameter estimation, scoring, and plotting for the BG/BB (Fader, Hardie, and Shang 2010 <doi:10.1287/mksc.1100.0580>), BG/NBD (Fader, Hardie, and Lee 2005 <doi:10.1287/mksc.1040.0098>) and Pareto/NBD and Gamma/Gamma (Fader, Hardie, and Lee 2005 <doi:10.1509/jmkr.2005.42.4.415>) models.
 
